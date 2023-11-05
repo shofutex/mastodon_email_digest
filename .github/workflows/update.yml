@@ -37,5 +37,5 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Mastodon Email Digest
           to: ${{secrets.MAIL_DESTINATION}}
-          from: Mastodon Digest # ${{secrets.MAIL_FROM}}
+          from: '"Mastodon Digest" <${{secrets.MAIL_FROM}}>'
           html_body: file://render/index.html
